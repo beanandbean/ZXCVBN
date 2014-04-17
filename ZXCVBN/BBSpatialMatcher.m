@@ -38,8 +38,9 @@
 }
 
 - (NSArray *)match:(NSString *)password withAdjacencyGraph:(NSDictionary *)graph named:(NSString *)graphName {
+    if ([password length] == 0) return @[];
     NSMutableArray *result = [NSMutableArray array];
-    
+
     int i = 0;
     while (i < password.length - 1) {
         int j = i + 1;

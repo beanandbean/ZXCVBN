@@ -163,31 +163,32 @@ static const double SECOND_PER_GUESS = SINGLE_GUESS / ATTACKER_COUNT;
     return _crackTimeDisplay;
 }
 
-- (NSUInteger)crackTimeToScore:(double)crackTime {
-  // 0: very weak
-  // 1: weak
-  // 2: so-so
-  // 3: good
-  // 4: great
-  if (crackTime < pow(10, 2)) {
+/*!
+ 0: very weak
+ 1: weak
+ 2: so-so
+ 3: good
+ 4: great
+ */
+- (NSUInteger)score {
+  if (self.crackTime < pow(10, 2)) {
     return 0;
-  } else if (crackTime < pow(10, 4)) {
+  } else if (self.crackTime < pow(10, 4)) {
     return 1;
-  } else if (crackTime < pow(10, 6)) {
+  } else if (self.crackTime < pow(10, 6)) {
     return 2;
-  } else if (crackTime < pow(10, 8)) {
+  } else if (self.crackTime < pow(10, 8)) {
     return 3;
   }
   return 4;
 }
 
-- (NSString *)crackTimeToScoreLabel:(double)crackTime {
-  NSUInteger score = [self crackTimeToScore:crackTime];
-  if (score == 0) return @"Very Weak";
-  else if (score == 1) return @"Weak";
-  else if (score == 2) return @"So-so";
-  else if (score == 3) return @"Good";
-  else if (score == 4) return @"Great";
+- (NSString *)scoreLabel {
+  if (self.score == 0) return @"Very Weak";
+  else if (self.score == 1) return @"Weak";
+  else if (self.score == 2) return @"So-so";
+  else if (self.score == 3) return @"Good";
+  else if (self.score == 4) return @"Great";
   NSAssert(NO, @"Invalid score");
   return @"Unknown";
 }
