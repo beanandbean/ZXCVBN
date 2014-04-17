@@ -22,6 +22,8 @@ pod "ZXCVBN"
 # Password Strength
 
 ```objc
+#import <ZXCVBN/BBPasswordStrength.h>
+
 BBPasswordStrength *strength = [[BBPasswordStrength alloc] initWithPassword:@""];
 [strength score]; // 0
 [strength entropy]; // 0.0
