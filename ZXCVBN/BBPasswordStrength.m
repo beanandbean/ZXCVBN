@@ -188,7 +188,7 @@ static const double SECOND_PER_GUESS = SINGLE_GUESS / ATTACKER_COUNT;
   else if (self.score == 1) return @"Weak";
   else if (self.score == 2) return @"So-so";
   else if (self.score == 3) return @"Good";
-  else if (self.score == 4) return @"Great";
+  else if (self.score == 4) return @"Great!";
   NSAssert(NO, @"Invalid score");
   return @"Unknown";
 }
