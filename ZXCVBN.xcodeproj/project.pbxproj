@@ -97,8 +97,8 @@
 		2CC9EB5F181142A40083828F /* BBPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPattern.m; sourceTree = "<group>"; };
 		2CD44AEE18128CBB00734182 /* BBL33tMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBL33tMatcher.h; sourceTree = "<group>"; };
 		2CD44AEF18128CBB00734182 /* BBL33tMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBL33tMatcher.m; sourceTree = "<group>"; };
-		2CE9AF34181673DD00D655D2 /* BBEntropyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBEntropyCenter.h; path = ../BBEntropyCenter.h; sourceTree = "<group>"; };
-		2CE9AF35181673DD00D655D2 /* BBEntropyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBEntropyCenter.m; path = ../BBEntropyCenter.m; sourceTree = "<group>"; };
+		2CE9AF34181673DD00D655D2 /* BBEntropyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEntropyCenter.h; sourceTree = "<group>"; };
+		2CE9AF35181673DD00D655D2 /* BBEntropyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEntropyCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
