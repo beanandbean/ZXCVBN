@@ -15,5 +15,7 @@
 - (NSString *)password;
 - (NSArray *)matchSequence;
 - (NSString *)crackTimeDisplay;
+- (NSUInteger)score;
+- (NSString *)scoreLabel;
 
 @end
