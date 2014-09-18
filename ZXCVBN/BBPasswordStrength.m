@@ -55,9 +55,14 @@ static const double SECOND_PER_GUESS = SINGLE_GUESS / ATTACKER_COUNT;
 - (id)initWithPassword:(NSString *)password {
     self = [super init];
     if (self) {
+        _calcTime = 0;
         self.password = password;
-        NSArray *matches = [[BBPatternCenter defaultCenter] match:password];
+        BBPatternCenter* paternCenter = [BBPatternCenter defaultCenter];
+        CFTimeInterval start = CACurrentMediaTime();
+        NSArray *matches = [paternCenter match:password];
         [self scoreMinimumEntropyWithMatches:matches];
+        CFTimeInterval end = CACurrentMediaTime();
+        self.calcTime = (end - start) * 1000.0;
     }
     return self;
 }
