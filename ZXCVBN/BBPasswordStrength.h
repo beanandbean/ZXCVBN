@@ -18,4 +18,6 @@
 - (NSUInteger)score;
 - (NSString *)scoreLabel;
 
+@property (nonatomic) double calcTime;
+
 @end
